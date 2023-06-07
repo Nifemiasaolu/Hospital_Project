@@ -43,13 +43,9 @@ nav {
                 display: inline-block;
                 background: transparent;
                 color: $white-color;
-                font-size: 1rem; 
+                font-size: 1.9rem; 
                 cursor: pointer;
                 
-                &#open_nav_btn {
-                    // color: $white-color;
-                    font-size: 1.9rem;
-                }
                 &#close_nav_btn {
                     display: none;
                 }
