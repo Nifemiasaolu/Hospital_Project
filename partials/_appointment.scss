@@ -11,6 +11,74 @@
 
             article {
                 display: flex;
+                gap: 1.5rem;
+                margin-bottom: 1.5rem;
+                
+                .info_icon {
+                    background: $secondary-color;
+                    color: $white-color;
+                    padding: 0.8rem;
+                    height: fit-content;
+                    border-radius: 50%;
+                    display: flex;
+                }
+                small {
+                    margin-top: 0.4rem;
+                    display: block;
+                }
+
+            }
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+
+            & > input {
+                margin: 0 auto;
+            }
+            
+            .form_group {
+                label {
+                    font-size: 0.85rem;
+                    margin-bottom: 0.4rem;
+                    display: inline-block;
+                    font-weight: 600;
+                }
+
+                input, textarea, select {
+                    display: block;
+                    background: $white-color;
+                    padding: 0.85rem 1rem;
+                    width: 100%;
+                    resize: none;
+                    appearance: none;
+                }
+            }
+        }
+    }
+}
+
+
+////////////////// MEDIA QUERIES (SMALL DEVICES) //////////////////
+@media screen and (max-width: 600px) {
+    #appointment {
+        .container {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+
+            .info{
+            h2, p {
+                text-align: center;
+               }
+            }
+
+            form {
+                & > input {
+                    margin: 0 auto;
+                }
             }
         }
     }
