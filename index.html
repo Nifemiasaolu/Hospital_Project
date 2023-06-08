@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>TOZAYNE Hospital</title>
+        <title>Home - Tozayne Hospital </title>
 
         <!-- Bootstrap Stylesheet -->
         <!-- <link
@@ -29,8 +29,10 @@
     </head>
     <body>
         <nav>
+            <a href="#"><i class="fa-solid fa-arrow-up home_arrow"></i></a>
+
             <div class="container">
-                <a href="h3" class="nav_logo"><h3>TOZAYNE</h3></a>
+                <a href="#" class="nav_logo"><h3>TOZAYNE</h3></a>
 
                 <ul id="nav_items">
                     <li><a href="#">Home</a></li>
@@ -210,7 +212,7 @@
                     </div>
                     <div class="specialist_info">
                         <h4>Dr Bianca Harder</h4>
-                        <small>Anaesthetic Specialist</small>
+                        <small>Anesthetic Specialist</small>
                     </div>
                     <div class="specialist_socials">
                         <a href="https://linkedIn.com" target="_blank"
@@ -458,45 +460,195 @@
                         <div class="info_icon">
                             <i class="fa-regular fa-user"></i>
                         </div>
-
-                        <h4>Experience Doctors</h4>
-                        <small>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Pariatur repellendus quibusdam magni esse
-                            temporibus dolor doloremque reprehenderit debitis
-                            quidem enim!
-                        </small>
+                        <div>
+                            <h4>Experience Doctors</h4>
+                            <small>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Pariatur repellendus quibusdam
+                                magni esse temporibus dolor doloremque
+                            </small>
+                        </div>
                     </article>
                     <article>
                         <div class="info_icon">
                             <i class="fa fa-microchip"></i>
                         </div>
-
-                        <h4>Advanced Technology</h4>
-                        <small>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Pariatur repellendus quibusdam magni esse
-                            temporibus dolor doloremque reprehenderit debitis
-                            quidem enim!
-                        </small>
+                        <div>
+                            <h4>Advanced Technology</h4>
+                            <small>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Pariatur repellendus quibusdam
+                                magni esse temporibus dolor doloremque
+                            </small>
+                        </div>
                     </article>
                     <article>
                         <div class="info_icon">
-                            <i class="fa fa-briefcase-medical"></i>  
+                            <i class="fa fa-briefcase-medical"></i>
                         </div>
 
-                        <h4>Emergency Care</h4>
-                        <small>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Pariatur repellendus quibusdam magni esse
-                            temporibus dolor doloremque reprehenderit debitis
-                            quidem enim!
-                        </small>
+                        <div>
+                            <h4>Emergency Care</h4>
+                            <small>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Pariatur repellendus quibusdam
+                                magni esse temporibus dolor doloremque
+                            </small>
+                        </div>
                     </article>
                 </div>
-                <form action="">form</form>
+                <form action="https://formspree.io/f/xyyaqopl" method="POST">
+                    <div class="form_group">
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            placeholder="Enter Your Name"
+                            name="Patient's Name"
+                            id="name"
+                            required
+                        />
+                    </div>
+
+                    <div class="form_group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="number"
+                            placeholder="Enter Phone Number"
+                            name="Phone Number"
+                            id="phone"
+                            required
+                        />
+                    </div>
+
+                    <div class="form_group">
+                        <label for="date">Date</label>
+                        <input
+                            type="date"
+                            placeholder="Choose a date"
+                            name="Date"
+                            id="date"
+                            required
+                        />
+                    </div>
+
+                    <div class="form_group">
+                        <label for="department">Select Department</label>
+                        <select name="Department" id="department" required>
+                            <option value="Department">--</option>
+                            <option value="Surgery Department">
+                                Surgery Department
+                            </option>
+                            <option value=" Anesthetic Department">
+                                Anesthetic Department
+                            </option>
+                            <option value="Cardiology Department">
+                                Cardiology Department
+                            </option>
+                            <option value="Orthopedic Department">
+                                Orthopedic Department
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="doctor">Select Doctor</label>
+                        <select name="Doctor" id="doctor" required>
+                            <option value="Doctor">--</option>
+                            <option value="Doctor Lorenzo Rodriguez">
+                                Doctor Lorenzo Rodriguez
+                            </option>
+                            <option value="Doctor Bianca Harder">
+                                Doctor Bianca Harder
+                            </option>
+                            <option value="Doctor Vivian Williams">
+                                Doctor Vivian Williams
+                            </option>
+                            <option value="Doctor Claire Palmer">
+                                Doctor Claire Palmer
+                            </option>
+                            <option value="Consultant Jeff Milner">
+                                Consultant Jeff Milner
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="message">Additional Message</label>
+                        <textarea
+                            name="Added Message"
+                            id="message"
+                            rows="6"
+                            placeholder="Add a message"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <input
+                        type="submit"
+                        value="Submit Request"
+                        class="btn-primary"
+                    />
+                </form>
             </div>
         </section>
+
+        <!--=============== END OF APPOINTMENT ==================-->
+
+        <footer>
+            <div class="container">
+                <article>
+                    <a href="#" class="footer_logo"><h3>TOZAYNE</h3></a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deleniti, modi.
+                    </p>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <small>+445923593</small>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-envelope"></i>
+                        <small>dummyknife2@gmail.com</small>
+                    </div>
+                </article>
+
+                <article>
+                    <h3>Support</h3>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Purchasing Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Career</a>
+                </article>
+
+                <article>
+                    <h3>Permalinks</h3>
+                    <a href="#">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#specialists">Specialist</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#appointment" class="btn-primary">Get Appointment</a>
+                </article>
+
+                <article>
+                    <h3>Contact Us</h3>
+                    <p>Press</p>
+                    <p>FAQs</p>
+                    <div class="footer_socials">
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="copyright">
+                <small>
+                    &copy; Copyright KNIFE DEV. All Rights Reserved.
+                </small>
+            </div>
+        </footer>
 
         <!-- Swiper JS CDN -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
