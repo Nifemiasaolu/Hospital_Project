@@ -15,3 +15,26 @@ const closeNav = function () {
 };
 
 closeNavBtn.addEventListener("click", closeNav);
+
+////////// Testimonials Section (Swiper JS) //////////////
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    // Responsive Breakpoints
+    breakpoints: {
+        //When eindow width is >= 600px
+        600: {
+            slidesPerView: 2,
+        },
+
+        //When eindow width is >= 1024px
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+});
