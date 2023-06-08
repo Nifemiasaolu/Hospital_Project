@@ -8,6 +8,42 @@ nav {
     place-items: center;
     @include gradientBackground;
 
+    // NavBar style on scroll using JS
+    &.window-scroll {
+
+        .home_arrow {
+            font-size: 1.2rem;
+            color: $white-color;
+            position: fixed;
+            bottom: 2rem;
+            right: 3.5rem;
+            @include gradientBackground;
+            padding: 1rem;
+            border-radius: 1rem;
+            transition: all 400ms ease;
+        }
+        background: $white-color;
+
+        .container {
+            button {
+                color: $black-color;
+            }
+
+            a {
+                color: $black-color;
+
+                & > h3 {
+                    color: $black-color;
+                }
+
+                &.btn {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+   
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -38,14 +74,28 @@ nav {
 ////////////////// MEDIA QUERIES (MEDIUM DEVICES) //////////////////
 @media screen and (max-width: 1024px) {
     nav {
+
+        // NavBar style on Scroll using JS
+        &.window-scroll {
+            .container {
+                a {
+                    color: $white-color;
+                }
+            }
+        }
+        .home_arrow {
+            bottom: 2rem;
+            right: 3rem;
+        }
+
         .container {
             button {
                 display: inline-block;
                 background: transparent;
                 color: $white-color;
-                font-size: 1.9rem; 
+                font-size: 1.9rem;
                 cursor: pointer;
-                
+
                 &#close_nav_btn {
                     display: none;
                 }
@@ -83,23 +133,23 @@ nav {
                     @keyframes flipNavItem {
                         from {
                             transform: rotateX(90deg);
-                            
                         }
                         to {
                             transform: rotateX(0deg);
                             opacity: 1;
-
                         }
                     }
 
                     a {
-                        
                         height: 100%;
                         display: block;
                         padding: 1.5rem 2rem;
                         color: $white-color;
                         border-radius: 0;
-                        background: linear-gradient($primary-color-variant, darken($primary-color-variant, 12%));
+                        background: linear-gradient(
+                            $primary-color-variant,
+                            darken($primary-color-variant, 12%)
+                        );
 
                         &.btn {
                             background: $secondary-color;
@@ -107,6 +157,17 @@ nav {
                     }
                 }
             }
+        }
+    }
+}
+
+////////////////// MEDIA QUERIES (SMALL DEVICES) //////////////////
+@media screen and (max-width: 600px) {
+    nav {
+        .home_arrow {
+            bottom: 2.5rem;
+            right: 1.5rem;
+            scroll-behavior: smooth;
         }
     }
 }
