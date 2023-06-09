@@ -40,6 +40,10 @@
 ////////////////// MEDIA QUERIES (SMALL DEVICES) //////////////////
 @media screen and (max-width: 600px) {
     .swiper {
+
+        & > p {
+            width: fit-content;
+        }
         .swiper-wrapper {
             .swiper-slide {
                 padding: 1.5rem;
