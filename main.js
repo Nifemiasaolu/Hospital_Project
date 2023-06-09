@@ -30,6 +30,7 @@ if(window.innerWidth < 1024) {
 // Change Nav Bar Styles on Scroll 
 window.addEventListener('scroll', () => {
     document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0);
+    document.querySelector('.copyright').classList.toggle('window-scroll', window.scrollY > 0);
 })
 
 
