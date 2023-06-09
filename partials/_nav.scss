@@ -8,21 +8,9 @@ nav {
     place-items: center;
     @include gradientBackground;
 
-
     // NavBar style on scroll using JS
     &.window-scroll {
         background: $white-color;
-        .home_arrow {
-            font-size: 1.2rem;
-            color: $white-color;
-            position: fixed;
-            bottom: 2rem;
-            right: 3.5rem;
-            @include gradientBackground;
-            padding: 1rem;
-            border-radius: 1rem;
-            transition: all 400ms ease;
-        }
 
         .container {
             button {
@@ -75,10 +63,6 @@ nav {
     nav {
         // NavBar style on Scroll using JS
         &.window-scroll {
-            .home_arrow {
-                bottom: 3.5rem;
-                right: 3rem;
-            }
             .container {
                 a {
                     color: $white-color;
@@ -154,22 +138,6 @@ nav {
                         }
                     }
                 }
-            }
-        }
-    }
-}
-
-////////////////// MEDIA QUERIES (SMALL DEVICES) //////////////////
-@media screen and (max-width: 600px) {
-    nav {
-        &.window-scroll {
-            .home_arrow {
-                bottom: 2.5rem;
-                right: 1.3rem;
-                scroll-behavior: smooth;
-                padding: 0.8rem;
-                font-size: 0.9rem;
-                border-radius: 0.6rem;
             }
         }
     }
