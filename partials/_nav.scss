@@ -8,6 +8,7 @@ nav {
     place-items: center;
     @include gradientBackground;
 
+
     // NavBar style on scroll using JS
     &.window-scroll {
         background: $white-color;
